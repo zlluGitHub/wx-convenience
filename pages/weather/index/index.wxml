@@ -1,0 +1,71 @@
+<view class="container">
+  <view class="loading"  wx:if="{{weatherData===''}}">
+    <image class="loadingimg" src="../images/loading.gif" />
+    <text class="loadingtext">主人，请稍等。。。</text>
+  </view>
+  <view   wx:elif="{{weatherData!==''}}" class="{{weatherData!==''? 'active' :''}}" style="background: url('https://zhenglinglu.cn/external/images/bgc1.jpg') center center no-repeat; background-size: cover;">
+    <view class="inner">
+      <view class="inner-top">
+        <view class="top-right" bindtap='search'>
+            <image  src="../images/position.png" class="position-icon"/>
+            <text class="city">{{weatherData.currentCity}}</text>
+        </view>
+        <icon type="search" class="search" color="#fff" bindtap='search' size="25"/>
+      </view>
+      <view class="temperature">
+        <view class="tem-left">
+          <text class="tem-num">{{realTime}}</text>
+          <view class="left-text">
+            <text class="text-left">{{update}}更新</text>
+            <text>pm25:{{weatherData.pm25}}</text>
+          </view>
+        </view> 
+      
+        <image class="weather-icon" src="{{weather_data[0].dayPictureUrl}}"/>
+        <view>
+            <text class="text1">今天 {{date}}</text>
+            <text class="text2">{{weatherData.weatherDesc}} {{weatherData.temperature}}</text>
+            <text class="text3">{{weatherData.wind}}</text>
+        </view>
+      </view>
+      <view class="other">
+        <swiper class="swiper" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" vertical="{{vertical}}">
+            <block wx:for="{{greeting}}">
+              <swiper-item>
+                <text class="greeting">{{item}}</text>
+              </swiper-item>
+            </block>
+          </swiper>
+          <image class="horn" bindtap='playMusic' src="../images/{{horn}}" />
+        </view>
+        <view class="warp">
+          <swiper class="banner" indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+            <block wx:for="{{imgUrls}}">
+              <swiper-item>
+                <image src="{{item}}" class="slide-image" height="150"/>
+              </swiper-item>
+            </block>
+          </swiper>
+        </view>
+          <view  class="details-box">
+            <view class="details" wx:for="{{weather_data}}" wx:key="index">
+              <text class="text-block1">{{item.date}}</text>
+              <view  class="text-block1">
+                <image class="weather-icon-other" src="{{item.dayPictureUrl}}"/>
+              </view>
+              <text class="text-block">{{item.weather}}</text>
+              <text class="text-block">{{item.temperature}}</text>
+              <text class="text-block-last">{{item.wind}}</text>
+            </view>
+        </view>  
+    </view>
+    <view class="list-warp"  wx:for="{{index}}" wx:key="index">
+      <view class="list-title">{{item.tipt}}:{{item.zs}}</view>
+      <view class="list-content">{{item.des}}</view>
+    </view>
+  
+    <view class="footer">
+      <text>制作者：冰蓝&心</text> <text class="footer1">图片来源：star</text> </view>
+   </view>
+</view>

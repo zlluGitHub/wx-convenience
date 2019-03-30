@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "navigationBarTitleText": "最热歌单",
+  "usingComponents": {
+    "loading": "../components/loading/loading"
+  }
+}

@@ -1,0 +1,20 @@
+<view class="bill-box">
+  <block wx:if="{{songs.length}}">
+    <view class="bill-top">
+      <image mode="scaleToFill" src="{{songListPic}}"></image>
+      <view class="random" bindtap="playall">全部播放</view>
+    </view>
+    <view class="bill-list">
+      <view class="bill-item" wx:for="{{songs}}" wx:key="navItems" data-data="{{item}}" data-index="{{index}}" bindtap="_PlayMusic">
+        <view class="item-left">
+          <image src="{{item.pic}}"></image>
+          <text> {{item.singer}}-{{item.name}}</text>
+        </view>
+        <view class="play-img"> <image src="../image/music.png"></image></view>
+      </view>
+    </view>
+  </block>
+  <view wx:else class="loading-container">
+    <loading></loading>
+  </view>
+</view>

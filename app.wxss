@@ -5,6 +5,48 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 200rpx 0;
   box-sizing: border-box;
 } 
+/**app.wxss**/
+@import "./utils/stylesheet.wxss";
+page{
+  height: 100%;
+  width: 100%;
+  /* background-color: #fff; */
+  color: #666;
+}
+image{
+  display: block;
+}
+.loading-container {
+  position: absolute;
+  width: 100%;
+  top: 25%;
+  /* transform: translateY(-50%); */
+}
+.list-title {
+  font-size: 30rpx;
+  padding:0rpx 10rpx;
+  border-left: 4rpx solid red;
+  margin: 20rpx 0rpx; 
+  margin-top:25px; 
+  margin-left: 10rpx;
+  overflow: hidden;
+}
+.list-more{
+  margin: auto;
+  width: 146rpx;
+  border: 1rpx solid #eee;
+  padding:18rpx 40rpx;
+  text-align: center;
+  font-size: 32rpx;
+  margin-bottom: 100rpx;
+  margin-top: 10rpx;
+  border-radius: 28rpx;
+}
+.list-title .type-title{
+float: left;
+}
+.list-title .more{
+float: right;
+}

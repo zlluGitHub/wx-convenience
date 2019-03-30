@@ -1,21 +1,106 @@
 /**index.wxss**/
-.userinfo {
+
+.wx-swiper-dot {
+  display: inline-flex !important;
+  height: 17rpx !important;
+  width: 17rpx !important;
+  border-radius: 17rpx !important;
+  margin: 0 6rpx !important;
+  vertical-align: sub !important;
+  border: 0 !important;
+}
+
+.wx-swiper-dot::before {
+  content: '' !important;
+  background: #cbcbcb !important;
+  flex-grow: 1 !important;
+  border-radius: 17rpx !important;
+}
+
+.wx-swiper-dot-active::before {
+  content: '' !important;
+  background: #53d55e !important;
+  flex-grow: 1 !important;
+  border-radius: 17rpx !important;
+}
+
+swiper {
+  height: 360rpx;
+}
+
+block {
+  height: 360rpx;
+}
+
+.slide-image {
+  width: 750rpx;
+  height: 360rpx;
+}
+
+page {
+  padding-bottom: 110rpx;
+}
+
+.ws_menu {
+  overflow: hidden;
+  text-align: center;
+  line-height: 28rpx;
+  margin: 10rpx;
+  border-bottom: 1rpx solid #E8E8E8;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.ws_menu navigator {
+  display: block;
+  flex-grow: 1;
+  width: 228rpx;
+  border-left: 1rpx solid #E8E8E8;
+  border-top: 1rpx solid #E8E8E8;
+  padding-bottom: 30rpx;
+  background: #fff;
+  /* margin-right: 10rpx; */
+  /* margin-bottom: 10rpx; */
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.ws_menu navigator:nth-child(3n) {
+  border-right: 1rpx solid #E8E8E8;
 }
 
-.usermotto {
-  margin-top: 200px;
+.ws_menu image {
+  margin: auto;
+  margin-top: 30rpx;
+  display: block;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.ws_menu text {
+  display: block;
+  margin-top: 10rpx;
+  font-size: 28rpx;
+  color: #777;
+}
+
+.ws_kf {
+  background: #89ba2a;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.ws_kf button {
+  border-radius: none;
+  display: block;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  background: #89ba2a;
+  color: #fff;
+}
+
+button::after {
+  border: 0;
 }

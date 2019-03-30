@@ -1,0 +1,19 @@
+<!-- index.wxml -->
+<scroll-view class="container" scroll-y>
+  <view class="list-warp" wx:if="{{qualityList}}">
+    <!-- <view class="list-title">
+      <view class="type-title">全部最新歌单</view>
+    </view> -->
+    <view class="toplist">
+      <view bindtap="_selectItemId" class="item" wx:for="{{qualityList}}" data-data="{{item}}" wx:key="navItems">
+        <view class="icon">
+          <image lazy-load src="{{item.coverImgUrl}}" />
+        </view>
+        <view class="songlist">{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+  <view wx:else class="loading-container">
+    <loading></loading>
+  </view>
+</scroll-view>

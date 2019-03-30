@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "navigationBarTitleText": "精选歌单",
+  "usingComponents": {
+    "loading": "../components/loading/loading"
+  }
+}

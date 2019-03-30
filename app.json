@@ -1,12 +1,38 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/blessing/create/create",
+    "pages/blessing/custom/custom",
+    "pages/blessing/preview/preview",
+    "pages/blessing/more/more",
+    "pages/logs/logs",
+
+    "pages/weather/index/index",
+    "pages/weather/search/search",
+
+    "pages/music/index/index",
+    "pages/music/about/about",
+    "pages/music/search/search",
+    "pages/music/player/player",
+    "pages/music/bill-list/bill-list",
+    "pages/music/allSongSheet/allSongSheet",
+    "pages/music/hotSongSheet/hotSongSheet",
+    "pages/music/newSongSheet/newSongSheet",
+    "pages/music/culleSongSheet/culleSongSheet",
+    "pages/music/logs/logs",
+    "pages/music/singer/singer",
+
+    "pages/todolist/index/index",
+    "pages/todolist/background-audio/background-audio",
+
+    "pages/calculator/index/index",
+
+    "pages/qrcode/index/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "生活小助手",
     "navigationBarTextStyle":"black"
   }
 }

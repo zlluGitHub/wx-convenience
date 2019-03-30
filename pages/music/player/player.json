@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "navigationBarTitleText": "播放器",
+  "usingComponents": {
+    "song-list": "../components/song-list/song-list",
+    "progress-bar": "../components/progress/progress",
+    "loading": "../components/loading/loading"
+  }
+}

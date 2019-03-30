@@ -1,0 +1,1 @@
+export const AK = "dwoeAw7ffEi2KgGgm5SfwucjZi66zO7h";

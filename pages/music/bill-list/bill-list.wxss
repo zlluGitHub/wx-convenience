@@ -1,0 +1,56 @@
+.bill-box{
+    color: 666;
+}
+.bill-box .bill-top{
+    position: relative;
+}
+.bill-box .bill-top image{
+    width: 100%;
+}
+.bill-box .bill-top .random{
+   width: 250rpx;
+   color: #fff;
+   border-radius: 24rpx;
+   padding:20rpx; 
+   text-align: center;
+   position: absolute;
+   bottom: 40rpx;
+   background-color: rgba(0, 0, 0, 0.5);
+    left: 30%;
+}
+.bill-box .bill-list{
+    font-size: 32rpx;
+    color: #666;
+}
+.bill-box .bill-list .bill-item{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 16rpx;
+}
+.bill-box .bill-list .item-left{
+    width: 600rpx;
+    display: flex;
+    align-items: center;
+   
+}
+.bill-box .bill-list .item-left image{
+    width: 80rpx;
+    height: 80rpx;
+    margin-right: 16rpx;
+    border-radius: 100%;
+}
+.bill-box .bill-list .play-img image{
+    width:55rpx;
+    height:55rpx;
+    padding:12rpx;
+    margin-right: 18rpx;
+}
+.bill-box .bill-list .item-left text{
+    padding: 10rpx;
+    width: 490rpx;
+    height:40rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}

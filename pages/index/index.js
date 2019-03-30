@@ -4,10 +4,15 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    imgUrls: [
+      'https://zhenglinglu.cn/zllublogAdmin/images/article/154943322981712181000.jpg',
+      'https://zhenglinglu.cn/zllublogAdmin/images/article/154943322981712181000.jpg',
+      'https://zhenglinglu.cn/zllublogAdmin/images/article/154943322981712181000.jpg'
+    ],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 5000,
+    duration: 1000,
   },
   //事件处理函数
   bindViewTap: function() {
@@ -25,6 +30,8 @@ Page({
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
       app.userInfoReadyCallback = res => {
+        console.log(res);
+        
         this.setData({
           userInfo: res.userInfo,
           hasUserInfo: true

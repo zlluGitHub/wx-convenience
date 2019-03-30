@@ -1,0 +1,52 @@
+<!-- logs.wxml -->
+<view class="sheet-warp">
+  <view>
+      <view class="title-warp">
+    <text class="sheet-title">语种</text>  </view>
+    <view class="sheet-list">
+      <block wx:for="{{subList}}" wx:key="navItems">
+        <view class="sheet-item" wx:if="{{item.type===0}}">{{item.name}}</view>
+      </block>
+    </view>
+  </view>
+  <view>
+    <view class="title-warp">
+      <text class="sheet-title">风格</text>
+    </view>
+    <view class="sheet-list">
+      <block wx:for="{{subList}}" wx:key="navItems">
+        <view class="sheet-item" wx:if="{{item.type===1}}">{{item.name}}</view>
+      </block>
+    </view>
+  </view>
+  <view>
+    <view class="title-warp">
+      <text class="sheet-title">场景</text>
+    </view>
+    <view class="sheet-list">
+      <block wx:for="{{subList}}" wx:key="navItems">
+        <view class="sheet-item" wx:if="{{item.type===2}}">{{item.name}}</view>
+      </block>
+    </view>
+  </view>
+  <view>
+    <view class="title-warp">
+      <text class="sheet-title">情感</text>
+    </view>
+    <view class="sheet-list">
+      <block wx:for="{{subList}}">
+        <view class="sheet-item" wx:if="{{item.type===3}}">{{item.name}}</view>
+      </block>
+    </view>
+  </view>
+  <view>
+    <view class="title-warp">
+      <text class="sheet-title">主题</text>
+    </view>
+    <view class="sheet-list">
+      <block wx:for="{{subList}}">
+        <view class="sheet-item" wx:if="{{item.type===4}}">{{item.name}}</view>
+      </block>
+    </view>
+  </view>
+</view>

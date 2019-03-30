@@ -1,0 +1,94 @@
+/**index.wxss**/
+swiper {
+  height:450rpx;
+}
+  
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+.usermotto {
+  margin-top: 200px;
+}
+
+.search-wrapper {
+  padding: 10rpx 30rpx;
+  position: relative;
+  margin-bottom: 20px;
+}
+.search-wrapper .search {
+  border-radius: 5px;
+  border: 1px solid #eee;
+  font-size: 12px;
+}
+.placeholder {
+  font-size: 12px;
+  text-align: center;
+}
+.search-wrapper .icon-search {
+  position: absolute;
+  right: 40rpx;
+  top: 20rpx;
+}
+
+/* 新增 */
+.list-warp{
+  padding: 0px 5px;
+}
+
+.list-warp .toplist{
+  margin-top: 3px;
+  font-size: 24rpx;
+  overflow:hidden
+}
+.list-warp .toplist .item{
+float: left;
+ width: 222rpx;
+ margin: 10rpx;
+margin-bottom:24rpx;
+}
+.list-warp .toplist .item .icon image{
+width: 100%;
+ height: 224rpx;
+}
+.list-warp .toplist .item .songlist{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  height: 60rpx;
+  font-size: 22rpx;
+}
+
+/* *index.wxss*
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+} */

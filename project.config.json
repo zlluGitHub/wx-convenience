@@ -12,7 +12,7 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.6.1",
+	"libVersion": "2.6.2",
 	"appid": "wx9e4ef83d6ecd09d5",
 	"projectname": "weChatConvenience",
 	"debugOptions": {

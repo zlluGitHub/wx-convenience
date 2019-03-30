@@ -1,0 +1,60 @@
+<!-- index.wxml -->
+<scroll-view class="container" scroll-y>
+  <block wx:if="{{qualityList}}">
+    <!-- <view class="search-wrapper" catchtap="toSearch">
+      <input class="search" placeholder="输入歌手名、歌曲名搜索" placeholder-style="color: #ffcd32;" disabled placeholder-class="placeholder" />
+      <i class="icon-search"></i>
+    </view> -->
+    <view class="slider-wrapper">
+      <my-slider parent="{{is_modal_Msg}}" slider="{{slider}}"></my-slider>
+    </view>
+    <view class="list-warp">
+      <view class="list-title">
+        <view class="type-title">精选歌单</view>
+        <view class="more" bindtap="_selectSongSheet" data-mark="culle">更多歌单》</view>
+      </view>
+      <view class="toplist">
+        <view bindtap="_selectItemId" class="item" wx:for="{{qualityList}}" data-data="{{item}}" wx:key="navItems">
+          <view class="icon">
+            <image lazy-load src="{{item.coverImgUrl}}" />
+          </view>
+          <view class="songlist">{{item.title}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="list-warp">
+      <view class="list-title">
+        <view class="type-title">最新歌单</view>
+        <view class="more" bindtap="_selectSongSheet" data-mark="new">更多歌单》</view>
+      </view>
+      <view class="toplist">
+        <view bindtap="_selectItemId" class="item" wx:for="{{newList}}" data-data="{{item}}" wx:key="navItems">
+          <view class="icon">
+            <image lazy-load src="{{item.coverImgUrl}}" />
+          </view>
+          <view class="songlist">{{item.title}}</view>
+        </view>
+      </view>
+    </view>
+    <!-- <view class="list-warp">
+      <view class="list-title">
+        <view class="type-title">最热歌单</view>
+        <view class="more" bindtap="_selectSongSheet" data-mark="hot">更多歌单》</view>
+      </view>
+      <view class="toplist">
+        <view bindtap="_selectItemId" class="item" wx:for="{{hotList}}" data-data="{{item}}" wx:key="navItems">
+          <view class="icon">
+            <image lazy-load src="{{item.coverImgUrl}}" />
+          </view>
+          <view class="songlist">{{item.title}}</view>
+        </view>
+      </view>
+    </view> -->
+    <view class="list-warp">
+      <view bindtap="_selectSongSheet" data-mark="all" class="list-more">全部歌单</view>
+    </view>
+  </block>
+  <view wx:else class="loading-container">
+    <loading></loading>
+  </view>
+</scroll-view>

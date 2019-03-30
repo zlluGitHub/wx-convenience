@@ -1,0 +1,20 @@
+.loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    width: 100%;
+    
+}
+.loading image {
+    width: 100rpx;
+    height: 100rpx;
+}
+.loading .desc {
+    line-height: 20px;
+    font-size: 12px;
+    margin-top: 20rpx;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}

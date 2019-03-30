@@ -1,0 +1,25 @@
+.sheet-warp {
+  font-size: 24rpx;
+  padding: 20rpx;
+}
+.sheet-warp .title-warp{
+  padding:10rpx;
+  padding-top: 20rpx;
+}
+.sheet-warp .title-warp .sheet-title{
+  font-size:30rpx;
+  padding:0rpx 10rpx;
+  border-left:4rpx solid red;
+  overflow:hidden;
+}
+.sheet-warp .sheet-list{
+   display: flex;
+   flex-wrap: wrap;
+}
+.sheet-warp .sheet-item{
+    padding: 8rpx;
+    margin: 8rpx;
+    border: 2rpx solid #eee;
+    color: #666;
+}
+
