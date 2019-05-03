@@ -1,5 +1,6 @@
 {
   "component": true,
+  "navigationBarTitleText": "歌单列表",
   "usingComponents": {
     "loading": "../components/loading/loading"
   }

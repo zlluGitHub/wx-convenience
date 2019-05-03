@@ -103,5 +103,10 @@ Page({
     return {
       title: 'lu-Music'
     }
-  }
+  },
+  search() {
+    wx.navigateTo({
+        url: '/pages/music/search/search'
+    })
+}
 })

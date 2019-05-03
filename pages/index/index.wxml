@@ -5,35 +5,90 @@
     </swiper-item>
   </block>
 </swiper>
+<view class="title">
+  <text>生活娱乐</text>
+</view>
 <view class="ws_menu">
-  <navigator hover-class="none" url="/pages/blessing/create/create">
-    <image src="https://m.youzhu.com/images/weChatAppImages/icon_1.png" />
-    <text>节日祝福</text>
-  </navigator>
-  <navigator hover-class="none" url="/pages/weather/index/index">
-    <image src="https://m.youzhu.com/images/weChatAppImages/icon_2.png" />
-    <text>天气预报</text>
-  </navigator>
   <navigator hover-class="none" url="/pages/music/index/index">
-    <image src="https://m.youzhu.com/images/weChatAppImages/icon_3.png" />
-    <text>音乐随身听</text>
+    <image src="https://zhenglinglu.cn/img/3.png" />
+    <text>随身听</text>
   </navigator>
   <navigator hover-class="none" url="/pages/todolist/index/index">
-    <image src="https://m.youzhu.com/images/weChatAppImages/icon_4.png" />
+    <image src="https://zhenglinglu.cn/img/1.png" />
     <text>备忘录</text>
   </navigator>
+    <navigator hover-class="none" url="/pages/weather/index/index">
+    <image src="https://zhenglinglu.cn/img/we2.png" />
+    <text>天气预报</text>
+  </navigator>
+</view>
+
+<view class="title">
+  <text>生活服务</text>
+</view>
+<view class="ws_menu">
+  <navigator hover-class="none" url="/pages/map/map/map">
+    <image src="https://zhenglinglu.cn/img/2.png" />
+    <text>地图定位</text>
+  </navigator>
+  <navigator hover-class="none" url="/pages/compass/compass/compass">
+    <image src="https://zhenglinglu.cn/img/4.png" />
+    <text>指南针</text>
+  </navigator>
   <navigator hover-class="none" url="/pages/calculator/index/index">
-    <image src="https://m.youzhu.com/images/weChatAppImages/icon_5.png" />
+    <image src="https://zhenglinglu.cn/img/5.png" />
     <text>计算器</text>
   </navigator>
+</view>
+
+<view class="title">
+  <text>开发工具</text>
+</view>
+<view class="ws_menu">
   <navigator hover-class="none" url="/pages/qrcode/index/index">
-    <image src="https://m.youzhu.com/images/weChatAppImages/icon_6.png" />
+    <image src="https://zhenglinglu.cn/img/6.png" />
     <text>二维码生成器</text>
   </navigator>
 </view>
-<view class="ws_kf">
-  <button open-type="contact">联系客服</button>
+<!-- 
+<view class="title">
+  <text>生活服务</text>
 </view>
+<view class="ws_menu">
+  <navigator hover-class="none" url="/pages/todolist/index/index">
+    <image src="https://zhenglinglu.cn/img/1.png" />
+    <text>备忘录</text>
+  </navigator>
+  <navigator hover-class="none" url="/pages/map/map/map">
+    <image src="https://zhenglinglu.cn/img/2.png" />
+    <text>地图定位</text>
+  </navigator>
+   <navigator hover-class="none" url="/pages/weather/index/index">
+    <image src="https://zhenglinglu.cn/img/天气.png" />
+    <text>天气预报</text>
+  </navigator> 
+  <navigator hover-class="none" url="/pages/music/index/index">
+    <image src="https://zhenglinglu.cn/img/3.png" />
+    <text>随身听</text>
+  </navigator>
+  <navigator hover-class="none" url="/pages/compass/compass/compass">
+    <image src="https://zhenglinglu.cn/img/4.png" />
+    <text>指南针</text>
+  </navigator>
+  <navigator hover-class="none" url="/pages/calculator/index/index">
+    <image src="https://zhenglinglu.cn/img/5.png" />
+    <text>计算器</text>
+  </navigator>
+  <navigator hover-class="none" url="/pages/qrcode/index/index">
+    <image src="https://zhenglinglu.cn/img/6.png" />
+    <text>二维码生成器</text>
+  </navigator>
+</view> -->
+
+
+<!-- <view class="ws_kf">
+  <button open-type="contact">联系客服</button>
+</view> -->
 <!-- index.wxml -->
 <!-- <view class="container">
   <view class="userinfo">

@@ -1,6 +1,6 @@
 {
   "component": true,
-  "navigationBarTitleText": "lu-Music",
+  "navigationBarTitleText": "随身听",
   "usingComponents": {
     "loading": "../components/loading/loading",
     "my-slider": "../components/slider/slider"

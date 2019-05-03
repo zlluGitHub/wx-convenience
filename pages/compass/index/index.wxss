@@ -1,0 +1,44 @@
+/**index.wxss**/
+.container {
+  height: 100%;
+}
+.text {
+  color: white;
+  font-size: 30rpx;
+  text-align: center;
+  padding: 60rpx 0 0;
+}
+.text text{
+  display: block;
+  height: 40rpx;
+  line-height: 40rpx
+}
+.tip-pic {
+  width: 750rpx;
+  height: 375rpx;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin: -188rpx 0 0
+}
+.tip-btn {
+  position: absolute;
+  left: 0;
+  width: 650rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 0 50rpx;
+  font-size: 30rpx;
+  bottom: 20rpx;
+}
+.tip-check {
+  position: absolute;
+  left: 0;
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 0 275rpx;
+  font-size: 30rpx;
+  bottom: 120rpx;
+  color: white
+}

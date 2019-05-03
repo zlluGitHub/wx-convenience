@@ -5,9 +5,10 @@ const app = getApp()
 Page({
   data: {
     imgUrls: [
-      'https://zhenglinglu.cn/zllublogAdmin/images/article/154943322981712181000.jpg',
-      'https://zhenglinglu.cn/zllublogAdmin/images/article/154943322981712181000.jpg',
-      'https://zhenglinglu.cn/zllublogAdmin/images/article/154943322981712181000.jpg'
+      'https://zhenglinglu.cn/img/banner1.jpg',
+      'https://zhenglinglu.cn/img/banner2.jpg',
+      'https://zhenglinglu.cn/img/banner3.jpg',
+      'https://zhenglinglu.cn/img/banner4.jpg'
     ],
     indicatorDots: true,
     autoplay: true,

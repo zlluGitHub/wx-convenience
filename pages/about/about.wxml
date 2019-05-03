@@ -1,0 +1,52 @@
+<view class="box">
+    <view class="title">
+        <view class="img">
+            <open-data type="userAvatarUrl"></open-data>
+        </view>
+    </view>
+    <view class="name">
+        <open-data type="userNickName" lang="zh_CN"></open-data>
+    </view>
+</view>
+
+
+<view>
+  <!-- <view class="header">
+    <image src="./bg.png" class="bg-image" /> 
+    <view class="userinfo-wrapper">
+      <view class="userinfo-avatar">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view class="userinfo-nickname">
+        <open-data type="userNickName"></open-data>
+      </view>
+    </view>
+  </view> -->
+    <view class="tab content">
+      <view class="like item" bindtap="modalcnt">
+        <!-- <view class="icon">
+             <image src="../image/keep.png" />
+        </view> -->
+        <view class="text">版本号</view>
+        <view class="more">
+          <image src="../../images/tubiao.png" />
+        </view>
+      </view>
+      <view class="rencent item" bindtap="modalinput">
+        <!-- <view class="icon">
+         <image src="../image/playing.png" />
+        </view> -->
+        <view class="text">意见反馈</view>
+        <view class="more">
+          <image src="../../images/tubiao.png" />
+        </view>
+      </view>
+   
+    </view>
+</view>
+<modal hidden="{{hiddenmodalput}}" title="请输入验证码" confirm-text="提交" cancel-text="重置" bindcancel="cancel" bindconfirm="confirm">  
+    <input type='text'placeholder="请输入内容" auto-focus/>  
+</modal> 
+<div class="contact">
+     <button open-type="contact">联系客服</button>
+</div>

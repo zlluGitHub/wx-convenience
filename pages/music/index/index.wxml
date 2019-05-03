@@ -1,6 +1,7 @@
 <!-- index.wxml -->
 <scroll-view class="container" scroll-y>
   <block wx:if="{{qualityList}}">
+    <icon type="search" class="search" color="#fff" bindtap='search' size="25"/>
     <!-- <view class="search-wrapper" catchtap="toSearch">
       <input class="search" placeholder="输入歌手名、歌曲名搜索" placeholder-style="color: #ffcd32;" disabled placeholder-class="placeholder" />
       <i class="icon-search"></i>

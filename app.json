@@ -1,17 +1,7 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/blessing/create/create",
-    "pages/blessing/custom/custom",
-    "pages/blessing/preview/preview",
-    "pages/blessing/more/more",
-    "pages/logs/logs",
-
-    "pages/weather/index/index",
-    "pages/weather/search/search",
-
     "pages/music/index/index",
-    "pages/music/about/about",
     "pages/music/search/search",
     "pages/music/player/player",
     "pages/music/bill-list/bill-list",
@@ -19,6 +9,15 @@
     "pages/music/hotSongSheet/hotSongSheet",
     "pages/music/newSongSheet/newSongSheet",
     "pages/music/culleSongSheet/culleSongSheet",
+
+    "pages/about/about",
+
+    "pages/compass/index/index",
+    "pages/compass/compass/compass",
+
+    "pages/weather/index/index",
+    "pages/weather/search/search",
+
     "pages/music/logs/logs",
     "pages/music/singer/singer",
 
@@ -27,12 +26,40 @@
 
     "pages/calculator/index/index",
 
-    "pages/qrcode/index/index"
-  ],
+    "pages/qrcode/index/index",
+
+    "pages/map/index/index",
+    "pages/map/map/map",
+    "pages/map/location/location",
+    "pages/map/logs/logs"
+  ], 
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "./images/home-1.png",
+      "selectedIconPath": "./images/home-2.png",
+      "text": "首页"
+    },{
+      "pagePath": "pages/weather/index/index",
+      "iconPath": "./images/we1.png",
+      "selectedIconPath": "./images/we2.png",
+      "text": "天气"
+    },{
+      "pagePath": "pages/about/about",
+      "iconPath": "./images/guanyv1.png",
+      "selectedIconPath": "./images/guanyv2.png",
+      "text": "关于"
+    }]
+  },
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "生活小助手",
+    "navigationBarTitleText": "冰蓝＆心",
     "navigationBarTextStyle":"black"
   }
+
 }

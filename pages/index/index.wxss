@@ -9,7 +9,24 @@
   vertical-align: sub !important;
   border: 0 !important;
 }
-
+.title{
+  font-size:12px;
+  display: flex;
+  /* justify-content: center; */
+  margin-top: 25px;
+  margin-bottom: 10px;
+  margin-left:5px;
+  border-left: 1px solid #53d55e;
+  padding-left:3px;
+}
+.title text{
+  width:75px;
+  padding:3px;
+  /* background:#89ba2a; */
+  /* text-align:center; */
+  color:#333;
+  border-radius:100px;
+}
 .wx-swiper-dot::before {
   content: '' !important;
   background: #cbcbcb !important;

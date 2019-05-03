@@ -62,6 +62,7 @@ Page({
       }
     });
   },
+
   // 获取处理歌词
   _getLyricAction: function (lrc) {
     // 用换行符拆分获取到的歌词
@@ -79,6 +80,7 @@ Page({
       currentLyric: medisArray
     });
   },
+
   // 去掉歌词中的转义字符
   _normalizeLyric: function (lyric) {
     return lyric.replace(/&#58;/g, ':').replace(/&#10;/g, '\n').replace(/&#46;/g, '.').replace(/&#32;/g, ' ').replace(/&#45;/g, '-').replace(/&#40;/g, '(').replace(/&#41;/g, ')')
@@ -93,22 +95,22 @@ Page({
         if (currentTime > time1 && currentTime < time2) {
           lineNum = i - 1
           break;
-        }
+        };
       } else {
         lineNum = lyric.length - 2
-      }
+      };
     }
     this.setData({
       currentLineNum: lineNum + 1,
       currentText: lyric[lineNum + 1] && lyric[lineNum + 1].txt
-    })
+    });
 
     let toLineNum = lineNum - 3
     if (lineNum > 3 && toLineNum != this.data.toLineNum) {
       this.setData({
         toLineNum: toLineNum
-      })
-    }
+      });
+    };
   },
 
   // 创建播放器
